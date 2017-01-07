@@ -8,6 +8,6 @@ if (Get-ProcessorBits 64) {
   $targetPath = ${env:ProgramFiles(x86)};
 }
 
-$silentArgs = "/SILENT /AUTO='$targetPath\AIMP3'";
+$silentArgs = "/SILENT /AUTO='$targetPath\AIMP4'";
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
